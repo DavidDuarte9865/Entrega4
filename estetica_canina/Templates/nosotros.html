@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quienes somos?</title>
+    <link rel="stylesheet" href="{% static 'css/nosotros.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="{% url 'inicio' %}">
+            <img src="{% static 'img/Logo-inicio.png' %}" alt="logo"> </a>
+            <p class="parrafo_logo"> Estetica canina </p> 
+        </div>
+        <div class="navegacion">
+            <ul class="nav justify-content-end">
+                <li class="nav-item"> <a class="nav-link active" href="{% url 'nosotros'%}"> Nosotros </a> </li>
+                <li class="nav-item"> <a class="nav-link active" href="#otros_servicios"> Otros servicios </a></li>
+                <li class="nav-item"> <a class="nav-link active" href="{% url 'galeria' %}"> Galeria </a></li>
+
+
+            </ul>
+        </div>
+    </div>
+    <!-- perdón por usar el texto automatico pero no se me ocurria que podia escribir en esta seccion por eso usé lorem -->
+    <div class="introduccion">
+        <h2> Quienes somos </h2>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, commodi suscipit beatae, deleniti esse
+            unde dolorum distinctio nulla sapiente adipisci dolore praesentium similique neque nisi doloremque repellat
+            quisquam obcaecati tempore. Non similique id quos obcaecati quas tenetur, quis tempore nihil distinctio
+            soluta explicabo tempora, voluptates dolores commodi ipsam delectus totam repellendus vel inventore illo in.
+            Doloribus, tempora laborum. Sapiente non illo, est quasi expedita ab hic sint, a, in nulla nobis. Unde,
+            molestiae fugit. Cum quisquam quis placeat perferendis quidem quia iure laborum id voluptas? Commodi sit
+            vero illo perspiciatis nostrum dolorum minus voluptate nisi eaque, quis minima non molestias?</p>
+        <h3> Como nacio la empresa</h3>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ex reprehenderit perspiciatis maxime hic quo
+            iure alias eligendi rem ut odio quia, eius quidem reiciendis nulla repellat ratione repellendus nostrum
+            libero ea voluptates nihil pariatur iste animi. Ipsam maxime in sunt commodi id repellendus enim debitis
+            incidunt repellat dolore. Adipisci, repudiandae rerum hic accusamus veritatis nostrum libero ipsa. Rem
+            dolorum et temporibus, iusto earum maiores, adipisci, esse aut voluptatum officiis tenetur odio sapiente.
+            Facere, sed nisi! Quo molestias recusandae maiores voluptas vel voluptatum, expedita dolores rem consequatur
+            culpa dignissimos officiis eius repellat tempore facere velit maxime? Quod cumque iure sed, similique sequi
+            sint commodi ut ducimus cupiditate ipsum consequatur voluptatum eaque perspiciatis doloremque nam recusandae
+            laborum est. Itaque, aspernatur harum!</p>
+    </div>
+    <footer class="footer justify-content-center">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'correo' %}" target="_blank">
+                    <img id="icono_google" src="{% static 'img/icons/google-plus-g-brands.svg' %}" alt="correo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="https://www.instagram.com/lapukapet/
+                " target="_blank">
+                    <img id="icono" src="{% static 'img/icons/instagram-brands.svg' %}" alt="instagram">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

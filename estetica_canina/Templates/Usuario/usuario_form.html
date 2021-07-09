@@ -1,0 +1,13 @@
+{% extends 'Usuario/base.html' %}
+
+{% block content %}
+<h1>Agregar USUARIO</h1>
+
+<div class="content container">
+    <form method="POST">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit">CARGAR</button>
+    </form>
+</div>
+
+{% endblock %}

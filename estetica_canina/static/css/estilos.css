@@ -1,0 +1,90 @@
+.header {
+    background-color:black;
+}
+.header img{
+    width: 75px;
+    height: 75px;
+    margin-top: 13px;
+    margin-block-end: 0%;
+}
+.header p{
+    color: white;
+    display: inline-block;
+    margin-left: 8px;
+    text-align: center;
+    font-size: 50px;
+}  
+.carousel-inner{
+    width: 300px;
+    height: 400px;
+
+    
+}
+#baño_perro{
+    width: 109%;
+    height: 400px;
+}
+.parrafo_corte{
+    color: black;
+}
+#titulo_cortes{
+    color: black;
+}
+.parrafo_lavado{
+    color: white;
+    font-size: 25px;
+}
+
+#paseo_canino{
+    width: 109%;
+    height: 400px;
+}
+#corte1{
+    width: 100%;
+    height: 400px;
+
+
+}
+.contenedor_inferior{
+    display:flex;
+}
+
+#otros_servicios {
+    background-color: darkred;
+    display: inline-block;
+    width: 50%;
+    display: inline-block;
+    
+}
+#otros_servicios p{
+    color: white;
+    font-size: 17px;
+}
+.otros_servicios_titulo{
+    color: white;
+}
+.lateral_logo{
+    width: 50%;
+    background-color: darkred;
+    display: inline-block;
+}
+.lateral_logo img{
+    margin-top: 45px;
+    margin-left: 3px;
+}
+#icono{
+    width: 33px;
+}
+#icono_google{
+    width: 47px;
+}
+.footer{
+    background-color: black;
+}
+
+
+
+
+
+
+

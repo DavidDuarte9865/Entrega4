@@ -1,0 +1,48 @@
+.header {
+    background-color: darkmagenta;
+}
+.header img{
+    width: 75px;
+    height: 75px;
+    margin-top: 13px;
+    margin-block-end: 0%;
+}
+.header p{
+    color: white;
+    display: inline-block;
+    margin-left: 8px;
+    text-align: center;
+    font-size: 30px;
+}  
+.contenedor_botones{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+#boton2 {
+    margin-left: 10px;
+}
+.jumbotron{
+    background-color: black;
+    height: 300px;
+}
+.jumbotron p{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+.jumbotron h1{
+    color:white;
+    text-align: center;
+}
+#icono{
+    width: 33px;
+}
+#icono_google{
+    width: 47px;
+}
+.footer{
+    background-color: black;
+    border-top: solid;
+    border-color: white;
+}

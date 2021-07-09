@@ -1,0 +1,47 @@
+{% extends 'Registro/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="display-3">Citas</h1>
+    <hr>
+    <a class="btn" role="button" href="{% url 'citas_form' %}">Agregar</a>
+    <hr>
+
+    {% if not object_list %}
+    <h1>No existe ninguna cita registrada</h1>
+    <br><br><br><br><br><br><br><br>
+    {% else %}
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Nombre cliente</td>
+                <td>Descripcion Servicio</td>
+                <td>Fecha cita</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cita in object_list %}
+            <tr>
+                <td>{{ cita.nombre }}</td>
+                <td>{{ cita.descripcion }}</td>
+                <td>{{ cita.fecha_cita }}</td>
+                <td> 
+                    {% if user.is_authenticated %}
+                    {% if user.is_superuser %}
+                        <a class="btn btn-primary" href="{% url 'citas_update' cita.id%}"> Editar </a>
+                        <a class="btn btn-danger" href="{% url 'citas_borrar' cita.id%}">Eliminar</a>
+                    {% endif %}
+                    {% endif %}
+                    
+                </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+
+</div>
+
+{% endblock %}

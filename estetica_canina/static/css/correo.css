@@ -1,0 +1,22 @@
+.contenedor_imagen{
+    background-image: url(../img/Sherlock1-ConvertImage.jpg);
+    background-position: center center; 
+    background-size: cover; 
+    height: 100vh;
+    display:flex;
+    width: 100%;
+
+}
+.container{
+    display: inline-flexbox;
+}
+.parrafo_lateral{
+    margin-top: 180px;
+    margin-left: 70px;
+    font-size: 28px;
+    width: 170px;
+    height: 210px;
+
+}
+
+
